@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-09-15T06:27:14.851061",
+  "day": "day2",
+  "rows_checked": 126,
+  "status": "FAIL",
+  "issue_count": 6,
+  "critical_count": 3,
+  "warning_count": 3,
+  "issues": [
+    {
+      "check": "null_rate",
+      "severity": "warning",
+      "detail": "Column 'customer_id' has 7.1% null values (threshold: 5%)"
+    },
+    {
+      "check": "null_rate",
+      "severity": "warning",
+      "detail": "Column 'amount' has 10.3% null values (threshold: 5%)"
+    },
+    {
+      "check": "duplicates",
+      "severity": "warning",
+      "detail": "Found 6 duplicate row(s) (excluding order_id/created_at)"
+    },
+    {
+      "check": "out_of_range",
+      "severity": "critical",
+      "detail": "Column 'amount' has 5 value(s) outside expected range [0, 100000] (e.g. -250.0)"
+    },
+    {
+      "check": "out_of_range",
+      "severity": "critical",
+      "detail": "Column 'quantity' has 4 value(s) outside expected range [1, 500] (e.g. 9999)"
+    },
+    {
+      "check": "row_count_drop",
+      "severity": "critical",
+      "detail": "Row count dropped 37.0% vs previous day (200 -> 126)"
+    }
+  ]
+}

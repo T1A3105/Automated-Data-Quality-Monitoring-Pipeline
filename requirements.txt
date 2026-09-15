@@ -1,0 +1,14 @@
+# Core pipeline dependencies
+pandas>=2.0.0
+requests>=2.28.0
+
+# Optional: only needed for the FastAPI serving layer (src/api.py)
+fastapi>=0.100.0
+uvicorn>=0.23.0
+
+# Optional: only needed if you switch DB_URL to MySQL for the API layer
+sqlalchemy>=2.0.0
+pymysql>=1.1.0
+
+# Dev / testing
+pytest>=7.4.0
